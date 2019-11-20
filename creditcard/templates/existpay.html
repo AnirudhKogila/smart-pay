@@ -1,0 +1,8 @@
+<h1>Available cards : </h1>
+{% for var in cards %}
+	<label class="container">
+	<input type="radio" name="radio" checked="checked">{{var.cardno}}	{{var.holdername}}	{{var.validthru}}<br>
+
+
+{% endfor %}
+	<a href="success"><button>Pay with selected card</button></a>

@@ -1,0 +1,16 @@
+<h2>Please Enter your debit-card details....</h2>
+<form action="onaddpay" method="post">
+	{% csrf_token %}
+	<fieldset>
+	<legend>Card-Details:</legend>
+	Card-number:
+	<input type="text" name="cardno"><br>
+	Card-Holder name:
+	<input type="text" name="cardholdername"><br>
+	Valid-thru:
+	<input type="text" name="validthru"><br>
+	CVV:
+	<input type="password" name="cvv" maxlength="3"><br>
+	<input type="submit" value="Add & pay">
+	</fieldset>
+</form>
